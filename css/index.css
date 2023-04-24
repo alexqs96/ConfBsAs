@@ -94,12 +94,14 @@ html .carousel-control-prev{
   height: 100%;
   min-width: 250px;
   max-width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: .3rem;
 }
 
 .orador_card img{
   object-fit: cover;
   aspect-ratio: 1/1;
-  border-radius: .2rem;
 }
 
 /* BsAs Fecha */
@@ -123,6 +125,10 @@ html .carousel-control-prev{
 }
 
 /* Form */
+
+.dotted{
+  text-decoration: underline dotted;
+}
 
 form{
   display: flex;
@@ -152,10 +158,6 @@ html .h-fit{
 
 html .w-fit{
   width: fit-content;
-}
-
-.gap-8{
-  gap: 5rem;
 }
 
 .mb-8{
