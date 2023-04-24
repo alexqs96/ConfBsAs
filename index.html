@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <title>Codo a Codo - Conf Bs. As</title>
+</head>
+<body class="montserrat bg-dark">
+  <header class="navbar gap-2 sticky-top px-1 px-xl-5 py-2 bg-dark">
+
+    <a href="index.html" class="d-flex align-items-center gap-3 h-fit">
+      <img class="logo" src="assets/img/codoacodo.png" alt="Codo a Codo Logo" />
+      <span class="d-none text-white fw-semibold fs-4 d-xl-block">Conf Bs As</span>
+    </a>
+    
+    <nav class="navmenu collapse" id="menu">
+      <ul class="d-flex align-items-center gap-3 m-0 list-unstyled text-white-50 fw-semibold">
+        <li>
+          <a href="#laConferencia">
+            <span class="d-xl-none" data-bs-toggle="collapse" data-bs-target="#menu">La Conferencia</span>
+            <span class="d-none d-xl-block">La Conferencia</span>
+          </a>
+        </li>
+        <li>
+          <a href="#losOradores">
+            <span class="d-xl-none" data-bs-toggle="collapse" data-bs-target="#menu">Los Oradores</span>
+            <span class="d-none d-xl-block">Los Oradores</span>
+          </a>
+        </li>
+        <li>
+          <a href="#lugarYfecha">
+            <span class="d-xl-none" data-bs-toggle="collapse" data-bs-target="#menu">Lugar y Fecha</span>
+            <span class="d-none d-xl-block">Lugar y Fecha</span>
+          </a>
+        </li>
+        <li>
+          <a href="#convierteteEnOrador">
+            <span class="d-xl-none" data-bs-toggle="collapse" data-bs-target="#menu">Convertite en Orador</span>
+            <span class="d-none d-xl-block">Convertite en Orador</span>
+          </a>
+        </li>
+        <li>
+          <a href="./pages/comprar_tickets.html">
+            <span class="d-xl-none" data-bs-toggle="collapse" data-bs-target="#menu">Comprar Tickets</span>
+            <span class="d-none d-xl-block">Comprar Tickets</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <button class="btn d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Ocultar Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </header>
+
+  <main class="d-flex flex-column gap-8 bg-white">
+
+    <section id="laConferencia" class="carousel_container">
+
+      <article class="confMsg">
+        <div>
+          <h1>Conf Bs As</h1>
+          <p>
+            Bs As llega por primera vez a Argentina. Un evento para compartir con
+            nuestra comunidad el conocimiento y experiencia de los expertos que
+            estan creando el futuro de Internet. Ven a conocer a miembros del
+            evento, a otros estudiantes de Codo a Codoy los oradores de primer
+            nivel que tenemos para ti. Te esperamos!
+          </p>
+          <nav class="d-flex gap-2 justify-content-end flex-wrap">
+            <a href="#convierteteEnOrador" class="btn btn-outline-light">Quiero ser Orador</a>
+            <a href="./pages/comprar_tickets.html" class="btn btn-success">Comprar Tickets</a>
+          </nav>
+        </div>
+      </article>
+
+      <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/hawaii.jpg" alt="Foto Buenos Aires 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/hawaii2.jpg" alt="Foto Buenos Aires 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/hawaii3.jpg" alt="Foto Buenos Aires 3">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <h2 class="fw-bold fs-1 text-center text-uppercase">Conoce a los Oradores</h2>
+
+    <section id="losOradores" class="d-block container">
+
+      <div class="oradores">
+
+        <article class="orador_card">
+          <img class="w-full" src="assets/img/steve.jpg" alt="Steve Jobs Foto" >
+          <div class="d-flex py-3 gap-2">
+            <span class="badge p-2 bg-danger">Assembly</span>
+            <span class="badge p-2 bg-info">SEO</span>
+          </div>
+          <h2>Steve Jobs</h2>
+          <p>Empresario y visionario de la tecnología. Co-fundador de Apple Inc. y líder en la revolución de la computación personal. Diseñador de productos icónicos como el Mac, iPod, iPhone y iPad. Su legado perdura en la cultura tecnológica moderna.</p>
+        </article>
+
+        <article class="orador_card">
+          <img class="w-full" src="assets/img/bill.jpg" alt="Steve Jobs Foto" >
+          <div class="d-flex py-3 gap-2">
+            <span class="badge p-2 bg-danger">Basic</span>
+            <span class="badge p-2 bg-info">SEO</span>
+          </div>
+          <h2>Bill Gates</h2>
+          <p>Cofundador de Microsoft, líder en la revolución de la informática. Filántropo y visionario tecnológico. Contribuyó a la popularización de la PC y desarrollo del software moderno.</p>
+        </article>
+
+        <article class="orador_card">
+          <img class="w-full" src="assets/img/ada.jpeg" alt="Steve Jobs Foto" >
+          <div class="d-flex py-3 gap-2">
+            <span class="badge p-2 bg-danger">Matematica</span>
+            <span class="badge p-2 bg-info">Inovadora</span>
+          </div>
+          <h2>Ada Lovelace</h2>
+          <p>Pionera en la informática, matemática británica. Primera programadora de la historia, trabajó en la Máquina Analítica de Charles Babbage. Su legado perdura en la historia de la tecnología.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <h2 class="fw-bold fs-1 text-center text-uppercase">Lugar y Fecha</h2>
+
+    <section id="lugarYfecha" class="container bsas">
+      
+      <div class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="3500">
+        <div class="carousel-inner">
+          <img src="assets/img/hawaii.jpg" class="carousel-item active" alt="Foto Buenos Aires 1">
+          <img src="assets/img/hawaii2.jpg" class="carousel-item" alt="Foto Buenos Aires 2">
+          <img src="assets/img/hawaii3.jpg" class="carousel-item" alt="Foto Buenos Aires 3">
+        </div>
+      </div>
+
+      <div class="bg-dark text-white">
+        <h2>Bs As - Octubre</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis animi assumenda reprehenderit tenetur quis voluptas, illo dicta nostrum sed consequatur maxime dolorum sint eius totam distinctio aspernatur ab, libero fuga! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto recusandae eaque minima perferendis iste possimus dignissimos, quam vitae dolores perspiciatis adipisci voluptas soluta nihil incidunt ullam suscipit aperiam. Aliquam, aut!</p>
+        <button class="btn btn-outline-light">Conoce Mas</button>
+      </div>
+
+    </section>
+
+    <section id="convierteteEnOrador" class="container d-flex flex-column align-items-center mb-8">
+      <h3 class="fw-bold fs-3 text-uppercase text-center">Convertite en un Orador</h3>
+      <p class="text-center">Anótate cómo orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+      <form>
+        <div class="flex-md-row">
+          <input class="form-control" name="nombre" type="text" placeholder="Nombre">
+          <input class="form-control" name="apellido" type="text" placeholder="Apellido">
+        </div>
+        <textarea class="form-control" name="tema" placeholder="¿Sobre que quieres hablar?"></textarea>
+        <small class="text-black-50">* Recuerda incluir un título para tu charla</small>
+        <button class="btn btn-success fw-semibold" type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+  <footer class="text-white-50 d-flex justify-content-around py-4 fw-semibold flex-wrap">
+    <small>Preguntas Frecuentes</small>
+    <small>Contáctanos</small>
+    <small>Prensa</small>
+    <small>Conferencias</small>
+    <small>Términos y Condiciones</small>
+    <small>Privacidad</small>
+    <small>Estudiantes</small>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
