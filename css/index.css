@@ -32,29 +32,34 @@ nav a:hover{
   display: none;
 }
 
+/* Bootstrap Menu Icon */
+
 html .navbar-toggler-icon {
   filter: invert(1);
   background-size: 140%;
 }
 
-/* Carousel Imagenes */
+/* Carousel Imagenes - Mensaje */
 
 .confMsg{
-  color: #fff;
   position: absolute;
   inset: 0;
   z-index: 3;
-  font-size: .8rem;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 .confMsg div{
-  position: absolute;
-  right: 5%;
-  bottom: 10%;
-  width: 85%;
-  max-width: 500px;
+  color: #fff;
+  font-size: .8rem;
   text-align: right;
+  max-width: 500px;
+  margin-left: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  place-content: end;
+  margin-right: 2%;
+  padding-bottom: 10%;
 }
 
 /* Bootstrap Carousel */
@@ -69,7 +74,7 @@ html .navbar-toggler-icon {
 
 .carousel_container img{
   min-height: 400px;
-  max-height: 80vh;
+  max-height: 75vh;
   object-fit: cover;
 }
 
@@ -93,7 +98,6 @@ html .carousel-control-prev{
   width: 100%;
   height: 100%;
   min-width: 250px;
-  max-width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border-radius: .3rem;
@@ -175,23 +179,9 @@ footer small:hover{
 /* Media Queries */
 
 @media (min-width: 768px) {
-
-  .confMsg{
-    color: #fff;
-    position: absolute;
-    inset: 0;
-    z-index: 3;
-    font-size: initial;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
   
   .confMsg div{
-    position: absolute;
-    right: 2%;
-    bottom: 25%;
-    width: 45%;
-    max-width: 500px;
-    text-align: right;
+    font-size: inherit;
   }
 
   .oradores{
@@ -208,18 +198,6 @@ footer small:hover{
   }
 }
 
-@media (max-width: 1200px) {
-  .navmenu{
-    order: 3;
-    width: 100%;
-  }
-
-  .navmenu ul{
-    flex-direction: column;
-    width: 100%;
-  }
-}
-
 @media (min-width: 1200px) {
   html #menu.navmenu.collapse {
     display: block;
@@ -230,5 +208,17 @@ footer small:hover{
 
   .navmenu ul{
     flex-direction: row;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navmenu{
+    order: 3;
+    width: 100%;
+  }
+
+  .navmenu ul{
+    flex-direction: column;
+    width: 100%;
   }
 }
