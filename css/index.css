@@ -7,6 +7,11 @@
   font-family: "Montserrat";
 }
 
+html body{
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
 html a{
   display: block;
   width: fit-content;

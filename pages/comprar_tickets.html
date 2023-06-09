@@ -58,12 +58,110 @@
 
   </header>
 
-  <main class="d-flex flex-column gap-8 bg-white">
-    <h1 class="text-center fw-semibold py-5">Pagina en Construcción</h1>
+  <main class="d-flex flex-column align-items-center gap-2 bg-white">
+
+    <section class="container row gap-3 mx-auto w-75 mt-4">
+      <button
+        onclick="changeTicket('student')"
+        class="d-flex btn flex-column align-items-center gap-2 py-4 w-fit border border-primary col"
+      >
+        <h4>Estudiante</h4>
+        <p>Tienen un descuento</p>
+        <b>80%</b>
+        <small>* Presentar documentación</small>
+      </button>
+  
+      <button
+        onclick="changeTicket('trainee')"
+        class="d-flex btn flex-column align-items-center gap-2 py-4 w-fit border border-success col"
+      >
+        <h4>Trainee</h4>
+        <p>Tienen un descuento</p>
+        <b>50%</b>
+        <small>* Presentar documentación</small>
+      </button>
+  
+      <button
+        onclick="changeTicket('junior')"
+        class="d-flex btn flex-column align-items-center gap-2 py-4 w-fit border border-warning col"
+      >
+        <h4>Junior</h4>
+        <p>Tienen un descuento</p>
+        <b>15%</b>
+        <small>* Presentar documentación</small>
+      </button>
+    </section>
+    
+    <p class="text-center mt-4">VENTA</p>
+
+    <h2 class="text-center">VALOR DE TICKET $200</h2>
+
+    <form
+      onsubmit="event.preventDefault(); calculatePrice(this);"
+      class="d-flex flex-column gap-3 w-75 mb-4"
+    >
+      <div class="flex-row row gap-3">
+        <div class="col-md gap-1">
+          <input type="text" class="form-control" placeholder="Nombre" name="name" onblur="checkInput(this)" oninput="checkInput(this)">
+          <div class="invalid-feedback">
+            Ingresa tu nombre
+          </div>
+        </div>
+        <div class="col-md gap-1">
+          <input type="text" class="form-control" placeholder="Apellido" name="surname" onblur="checkInput(this)" oninput="checkInput(this)">
+          <div class="invalid-feedback">
+            Ingresa tu apellido
+          </div>
+        </div>
+      </div>
+
+      <div class="gap-1">
+        <input type="email" class="form-control" placeholder="Correo" name="email" onblur="checkInput(this, true)" oninput="checkInput(this, true)">
+          <div class="invalid-feedback">
+            Ingresa un email valido
+          </div>
+      </div>
+      
+      <div class="flex-row row gap-3">
+        <div class="col-md gap-1">
+          <label for="quantity">Cantidad</label>
+          <input id="quantity" onblur="checkInput(this)" oninput="checkInput(this)" class="form-control" placeholder="Cantidad" name="quantity" value="1" type="number" min="1" pattern="[0-9]+" oninput="this.value = this.value.replace(/[^0-9]/g, '')" inputmode="numeric">
+          <div class="invalid-feedback">
+            Ingresa una cantidad
+          </div>
+        </div>
+
+        <div class="col-md gap-1">
+          <label for="category">Categoria</label>
+          <select class="form-control" id="category" name="category">
+            <option value="spectator" selected>Espectador</option>
+            <option value="student">Estudiante</option>
+            <option value="trainee">Trainee</option>
+            <option value="junior">Junior</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="amount" class="p-3 fw-medium rounded border border-primary-subtle bg-primary-subtle">Total a Pagar: $</p>
+
+      <div class="flex-row row gap-3">
+        <div class="col-md">
+          <button onclick="resetInputs()" type="reset" class="btn btn-success py-2">Borrar</button>
+        </div>
+        <div class="col-md">
+          <button type="submit" class="col-md btn btn-success py-2">Resumen</button>
+        </div>
+      </div>
+    </form>
+
+    <div id="message">
+
+    </div>
+    
   </main>
 
   <footer class="text-white-50 d-flex py-4 fw-semibold flex-column gap-4">
-    <div class="d-flex justify-content-around flex-wrap">
+    <div class="d-flex justify-content-sm-between justify-content-around flex-wrap px-5">
       <small>Preguntas Frecuentes</small>
       <small>Contáctanos</small>
       <small>Prensa</small>
