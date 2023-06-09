@@ -7,6 +7,8 @@ function resetInputs(){
     e.classList.remove("is-valid")
     e.classList.remove("is-invalid")
   })
+
+  document.querySelector("#amount").innerText = "Total a Pagar: $"
 }
 
 /**
