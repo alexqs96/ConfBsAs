@@ -56,6 +56,7 @@ function checkInput(e, option) {
 
 function changeTicket(value) {
   document.querySelector("#category").value = value;
+  document.querySelector("#amount").innerText = "Total a Pagar: $";
 }
 
 /**
