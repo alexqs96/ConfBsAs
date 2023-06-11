@@ -125,7 +125,7 @@
       <div class="flex-row row gap-3">
         <div class="col-md gap-1">
           <label for="quantity">Cantidad</label>
-          <input id="quantity" onblur="checkInput(this)" oninput="checkInput(this)" class="form-control" placeholder="Cantidad" name="quantity" value="1" type="number" min="1" pattern="[0-9]+" oninput="this.value = this.value.replace(/[^0-9]/g, '')" inputmode="numeric">
+          <input id="quantity" onblur="checkInput(this)" oninput="checkInput(this), resetTotal()" class="form-control" placeholder="Cantidad" name="quantity" value="1" type="number" min="1" pattern="[0-9]+" oninput="this.value = this.value.replace(/[^0-9]/g, '')" inputmode="numeric">
           <div class="invalid-feedback">
             Ingresa una cantidad
           </div>
